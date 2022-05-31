@@ -63,7 +63,6 @@ class App extends Component {
     return (
       <ScrollView>
         <View>
-          <Button title='---'></Button>
           <Text style={{ color: 'black', fontSize: 20, textTransform: 'uppercase',textAlign: 'right', margin: 10, paddingTop: 20 }}>My BMW App</Text>
           <Text style={{ color: 'black', fontSize: 10, textTransform: 'uppercase', textAlign: 'left', paddingTop: 10 }}></Text>
 
@@ -71,7 +70,7 @@ class App extends Component {
             {imagens}
           </ScrollView>
 
-          <Text style={{ color: 'black', fontSize: 20, textAlign: 'center', margin: 7, paddingTop: 20 }}>Nossos modelos de veiculos</Text>
+          <Text style={{ color: 'black', fontSize: 20, textAlign: 'center', margin: 7, paddingTop: 20, paddingBottom: -100}}>Nossos modelos de veiculos</Text>
           <Text style={{ color: 'black', fontSize: 10, textTransform: 'uppercase', textAlign: 'left', paddingTop: 10 }}></Text>
           <ScrollView horizontal={true}>
 
