@@ -27,3 +27,25 @@
 <h4 align="center">OU</h4>
 <h4 align="center">Digitar no terminal: react-native run </h4>
 <h3 align="center">---------------------------------------------</h3>
+
+<br>
+
+### Tecnologias 🚀
+
+<br>
+
+  As seguintes ferramentas foram usadas na construção do projeto:
+
+  - [x] **React-Native**
+
+#### Ferramentas
+
+  - [**VS CODE**](https://code.visualstudio.com/)
+  - [**NPM**](https://npm.dev/)
+  - [**React-Native**](https://npm.dev/)
+
+
+<br>
+  <h1 align="center">Siga-me</h1>
+  <p align="center">Made with 💜 by FELIPE HOLANDA 👋🏻 <br>[See my Linkedin](https://www.linkedin.com/in/felipe-holanda-de-freitas-3a91281a2/)</p>
+   <p align="center">---------------END--------------</p>
