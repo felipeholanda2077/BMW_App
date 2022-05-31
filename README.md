@@ -6,12 +6,14 @@
 
 <h1 align="center">BMW_App</h1>
 
-<br><br>
+<br>
 
 <p align="center">Índice<br>
 <a href="#-sobre-o-projeto-">Sobre</a> •
 <a href="#Tecnologias-">Tecnologias</a> •
 <a href="#Ferramentas">Ferramentas</a></p>
+
+<br>
 
 <h2 align="center"> Sobre o Projeto 👨🏻‍💻</h2>
 <h3 align="center">Projeto BMW - APP / Em Andamento🚀</h3>
