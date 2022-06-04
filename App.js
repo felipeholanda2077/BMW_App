@@ -1,8 +1,18 @@
 import React, { Component } from 'react';
-import { View, Text, Button, Image, ScrollView } from 'react-native';
+import {Linking, ToastAndroid, View, Text, Button, Image, ScrollView } from 'react-native';
+
 
 class App extends Component {
   render() {
+
+    const openUrl = async(url) => {
+      if(await Linking.canOpenURL(url)) {
+        await Linking.openURL(url)
+      }
+      else {
+        ToastAndroid.show('Can\'t open this URL', ToastAndroid.SHORT)
+      }
+    }
 
     //Imagens Links
     let Banner1 = "https://www.megaisencoes.com.br/img/slider/banner-bmw.jpg";
@@ -63,7 +73,16 @@ class App extends Component {
     return (
       <ScrollView>
         <View>
-          <Text style={{ color: 'black', fontSize: 20, textTransform: 'uppercase',textAlign: 'right', margin: 10, paddingTop: 20 }}>My BMW App</Text>
+
+        <View style={{justifyContent: "space-around", display: 'flex', flex: 1, flexDirection: 'row', margin: 10,}}>
+              <Button color='blue' borderRadius='100' title='    HOME PAGE    ' width='150' height='50' />
+              <Text style={{textAlign: 'center',textDecorationColor: 'black', fontSize: 10, textTransform: 'uppercase', textAlign: 'left', paddingTop: 10 }}>            </Text>
+              <Button color='blue' title='    Categorias    '></Button>
+              <Text style={{ textAlign: 'center', color: 'black', fontSize: 10, textTransform: 'uppercase', textAlign: 'left', paddingTop: 10 }}>            </Text>
+              <Button color='blue' title='      Sobre     '></Button>
+              <Text style={{ textAlign: 'center',color: 'black', fontSize: 20, textAlign: 'left', marginLeft: 100 , textAlign: 'right'}}>MY BMW APP</Text>
+            </View>
+
           <Text style={{ color: 'black', fontSize: 10, textTransform: 'uppercase', textAlign: 'left', paddingTop: 10 }}></Text>
 
           <ScrollView>
@@ -93,15 +112,16 @@ class App extends Component {
           <Button paddingTop={10} title='VER MAIS'></Button>
 
           <Text style={{ color: 'black', fontSize: 16, textAlign: 'left', margin: 40 }}>O novo My BMW App{'\n'}{'\n'}{'\n'}Se adapta a você tão perfeitamente quanto o seu BMW.
-          {'\n'}É a ligação direta ao veículo e ao mundo da BMW, mesmo se você não estiver dentro do seu BMW.{'\n'}O My BMW App irá se tornar o seu companheiro de mobilidade diária com o seu design moderno, interface intuitiva e muitas funcionalidades.{'\n'}{'\n'}Planeje as suas viagens,envie o seu próximo destino diretamente para o seu BMW no conforto do seu sofá, verifique a autonomia antes de iniciar a viagem ou climatize o interior do automóvel facilmente.{'\n'}{'\n'} Não tem certeza se trancou o seu veículo? Verifique no aplicativo e tranque o veículo com apenas um toque.{'\n'}{'\n'}O My BMW App tem funcionalidades muito úteis e específicas para o seu veículo elétrico BMW ou veículo híbrido plug-in BMW.{'\n'}Otimize o consumo e os custos de energia com o temporizador de carregamento e do ar-condicionado.{'\n'}{'\n'} O My BMW App garante uma mobilidade sem preocupações e um prazer de conduzir o veículo elétrico ainda maior – em qualquer momento, em qualquer lugar. Your World. My BMW.{'\n'}{'\n'}{'\n'}----------------------------------------------------------------------------</Text>
+          {'\n'}É a ligação direta ao veículo e ao mundo da BMW, mesmo se você não estiver dentro do seu BMW.{'\n'}O My BMW App irá se tornar o seu companheiro de mobilidade diária com o seu design moderno, interface intuitiva e muitas funcionalidades.{'\n'}{'\n'}Planeje as suas viagens,envie o seu próximo destino diretamente para o seu BMW no conforto do seu sofá, verifique a autonomia antes de iniciar a viagem ou climatize o interior do automóvel facilmente.{'\n'}{'\n'} Não tem certeza se trancou o seu veículo? Verifique no aplicativo e tranque o veículo com apenas um toque.{'\n'}{'\n'}O My BMW App tem funcionalidades muito úteis e específicas para o seu veículo elétrico BMW ou veículo híbrido plug-in BMW.{'\n'}Otimize o consumo e os custos de energia com o temporizador de carregamento e do ar-condicionado.{'\n'}{'\n'} O My BMW App garante uma mobilidade sem preocupações e um prazer de conduzir o veículo elétrico ainda maior – em qualquer momento, em qualquer lugar. Your World. My BMW.</Text>
           
+          <Text style={{ color: 'black', fontSize: 16, textAlign: 'center', margin: 40 }}>--------------------------------------------------------------------------------------------</Text>
 
           {Icone}
 
-          <Button paddingTop={20} color={'black'}  title='Encontre uma Concessionária'></Button>
+          <Button paddingTop={20} color={'black'} onPress={{openUrl}} title='Encontre uma Concessionária'></Button>
 
 
-          <Text style={{ color: 'black',paddingTop: 10 ,fontSize: 10, textAlign: 'center'}}>---------------------------------------------------------------------------------------------------------</Text>
+          <Text style={{ color: 'black',paddingTop: 15 ,fontSize: 16, textAlign: 'center'}}>---------------------------------------------------------------------------------------------------------</Text>
 
           <Text style={{ color: 'black', fontSize: 20, textAlign: 'left', margin: 50}}>Siga-nos nas nossas redes sociais:</Text>
           
