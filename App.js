@@ -75,11 +75,11 @@ class App extends Component {
         <View>
 
         <View style={{justifyContent: "space-around", display: 'flex', flex: 1, flexDirection: 'row', margin: 10,}}>
-              <Button color='blue' borderRadius='100' title='    HOME PAGE    ' width='150' height='50' />
+              <Button color='black' borderRadius='100' title='    HOME PAGE    ' width='150' height='50' />
               <Text style={{textAlign: 'center',textDecorationColor: 'black', fontSize: 10, textTransform: 'uppercase', textAlign: 'left', paddingTop: 10 }}>            </Text>
-              <Button color='blue' title='    Categorias    '></Button>
+              <Button color='black' title='    Categorias    '></Button>
               <Text style={{ textAlign: 'center', color: 'black', fontSize: 10, textTransform: 'uppercase', textAlign: 'left', paddingTop: 10 }}>            </Text>
-              <Button color='blue' title='      Sobre     '></Button>
+              <Button color='black' title='      Sobre     '></Button>
               <Text style={{ textAlign: 'center',color: 'black', fontSize: 20, textAlign: 'left', marginLeft: 100 , textAlign: 'right'}}>MY BMW APP</Text>
             </View>
 
@@ -109,7 +109,7 @@ class App extends Component {
 
           {Futuro}
 
-          <Button paddingTop={10} title='VER MAIS'></Button>
+          <Button color={'black'} paddingTop={10} title='VER MAIS'></Button>
 
           <Text style={{ color: 'black', fontSize: 16, textAlign: 'left', margin: 40 }}>O novo My BMW App{'\n'}{'\n'}{'\n'}Se adapta a você tão perfeitamente quanto o seu BMW.
           {'\n'}É a ligação direta ao veículo e ao mundo da BMW, mesmo se você não estiver dentro do seu BMW.{'\n'}O My BMW App irá se tornar o seu companheiro de mobilidade diária com o seu design moderno, interface intuitiva e muitas funcionalidades.{'\n'}{'\n'}Planeje as suas viagens,envie o seu próximo destino diretamente para o seu BMW no conforto do seu sofá, verifique a autonomia antes de iniciar a viagem ou climatize o interior do automóvel facilmente.{'\n'}{'\n'} Não tem certeza se trancou o seu veículo? Verifique no aplicativo e tranque o veículo com apenas um toque.{'\n'}{'\n'}O My BMW App tem funcionalidades muito úteis e específicas para o seu veículo elétrico BMW ou veículo híbrido plug-in BMW.{'\n'}Otimize o consumo e os custos de energia com o temporizador de carregamento e do ar-condicionado.{'\n'}{'\n'} O My BMW App garante uma mobilidade sem preocupações e um prazer de conduzir o veículo elétrico ainda maior – em qualquer momento, em qualquer lugar. Your World. My BMW.</Text>
