@@ -4,7 +4,7 @@
    </a>
 </p>
 
-<h1 align="center">BMW_App</h1>
+<h1 align="center">BMW_APP</h1>
 
 <br>
 
