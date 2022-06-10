@@ -92,6 +92,7 @@ class App extends Component {
           </ScrollView>
 
           {/* Parte de estatitivas*/}
+          
 
           <Text style={{ color: 'black', fontSize: 20, textAlign: 'center', margin: 7, paddingTop: 20, paddingBottom: -100}}>Nossos modelos de veiculos</Text>
           <Text style={{ color: 'black', fontSize: 10, textTransform: 'uppercase', textAlign: 'left', paddingTop: 10 }}></Text>
