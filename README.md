@@ -4,7 +4,7 @@
    </a>
 </p>
 
-<h1 align="center">BMW_App</h1>
+<h1 align="center">BMW_APP</h1>
 
 <br>
 
@@ -44,8 +44,11 @@
   - [**NPM**](https://npm.dev/)
   - [**React-Native**](https://npm.dev/)
 
-
 <br>
+
   <h1 align="center">Siga-me</h1>
   <p align="center">Made with 💜 by FELIPE HOLANDA 👋🏻 <br>[See my Linkedin](https://www.linkedin.com/in/felipe-holanda-de-freitas-3a91281a2/)</p>
+  
+  <br>
+  
    <p align="center">---------------END--------------</p>
